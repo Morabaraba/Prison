@@ -1,0 +1,41 @@
+[
+{
+"key": "prison",
+"url": "assets/prison.png",
+"type": "image"
+},
+{
+"key": "misc_crystal",
+"url": "assets/crawl/item/misc/misc_crystal.png",
+"type": "image"
+},
+{
+"key": "giant_ant",
+"url": "assets/crawl/dc-mon/animals/giant_ant.png",
+"type": "image"
+},
+{
+"key": "pig_form",
+"url": "assets/crawl/player/transform/pig_form.png",
+"type": "image"
+},
+{
+"key": "chest_closed",
+"url": "assets/crawl/UNUSED/other/chest2_closed.png",
+"type": "image"
+},
+{
+"key": "orange_rat",
+"url": "assets/crawl/dc-mon/animals/orange_rat.png",
+"type": "image"
+},{
+"key": "human",
+"url": "assets/crawl/dc-mon/human.png",
+"type": "image"
+},
+{
+"key": "level1",
+"url": "assets/maps/prison-level1.json",
+"type": "tilemap"
+}
+]

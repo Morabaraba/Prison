@@ -1,0 +1,9 @@
+{
+    "name": "prison",
+    "version": "0.0.1",
+    "description": "Escape from the prison",
+    "attachments": ["dist"],
+    "dependencies": {
+        "attachments": null       
+    }
+}
