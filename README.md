@@ -14,11 +14,9 @@ If you have nothing installed on your machine and just want to get this project 
 
 Execute the following commands from your ubuntu terminal:
 
-	sudo apt-get install tmux vim git npm couchdb chromium tiled
+	sudo apt-get install node tiled
 	sudo npm install bower kanso grunt-cli -g 
 	
-	mkdir ~/project
-	cd ~/project/
 	URL=prison@ludo.wifi:~/project/prison
 	git clone $URL
 	cd prison
@@ -75,3 +73,6 @@ You will not believe but I was approached by a warthog just minutes ago, a singl
 ## License 
 
 The MIT License
+
+[tiled]: http://www.mapeditor.org/
+[phaser.io]: http://phaser.io/
