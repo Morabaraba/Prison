@@ -49,17 +49,20 @@
          "y":0
         }, 
         {
+         "draworder":"topdown",
          "height":16,
          "name":"chests",
          "objects":[
                 {
                  "gid":2925,
                  "height":0,
+                 "id":1,
                  "name":"chest",
                  "properties":
                     {
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -69,11 +72,13 @@
                 {
                  "gid":2925,
                  "height":0,
+                 "id":2,
                  "name":"chest",
                  "properties":
                     {
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -83,11 +88,13 @@
                 {
                  "gid":2925,
                  "height":0,
+                 "id":3,
                  "name":"chest",
                  "properties":
                     {
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -97,11 +104,13 @@
                 {
                  "gid":2925,
                  "height":0,
+                 "id":4,
                  "name":"chest",
                  "properties":
                     {
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -111,11 +120,13 @@
                 {
                  "gid":2925,
                  "height":0,
+                 "id":5,
                  "name":"chest",
                  "properties":
                     {
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -130,18 +141,21 @@
          "y":0
         }, 
         {
+         "draworder":"topdown",
          "height":16,
          "name":"objects",
          "objects":[
                 {
                  "gid":996,
                  "height":0,
+                 "id":6,
                  "name":"portal",
                  "properties":
                     {
                      "onCollisionGotoGame":"#\/assets\/maps\/prison-level1.json",
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -151,6 +165,7 @@
                 {
                  "gid":734,
                  "height":0,
+                 "id":7,
                  "name":"water",
                  "properties":
                     {
@@ -158,6 +173,7 @@
                      "onCollisionText":"You drink some water, taste good for a town so ugly.",
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -167,13 +183,15 @@
                 {
                  "gid":1005,
                  "height":0,
+                 "id":8,
                  "name":"shop-door",
                  "properties":
                     {
                      "immovable":"true",
-                     "onCollisionGotoGame":"#\/assets\/maps\/prison-shop.json",
+                     "onCollisionGotoGame":"#assets\/maps\/prison-shop.json",
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -183,6 +201,7 @@
                 {
                  "gid":993,
                  "height":0,
+                 "id":9,
                  "name":"magic-door",
                  "properties":
                     {
@@ -190,6 +209,7 @@
                      "onCollisionGotoGame":"#\/assets\/maps\/prison-house.json",
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -199,6 +219,7 @@
                 {
                  "gid":728,
                  "height":0,
+                 "id":10,
                  "name":"home1",
                  "properties":
                     {
@@ -206,6 +227,7 @@
                      "onCollisionText":"A door of a house, closed.",
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -215,6 +237,7 @@
                 {
                  "gid":728,
                  "height":0,
+                 "id":11,
                  "name":"home2",
                  "properties":
                     {
@@ -222,6 +245,7 @@
                      "onCollisionText":"Let us respect privacy.",
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -231,6 +255,7 @@
                 {
                  "gid":728,
                  "height":0,
+                 "id":12,
                  "name":"home3",
                  "properties":
                     {
@@ -238,6 +263,7 @@
                      "onCollisionText":"Not your door to enter.",
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -247,6 +273,7 @@
                 {
                  "gid":91,
                  "height":0,
+                 "id":13,
                  "name":"guide-elf",
                  "properties":
                     {
@@ -254,6 +281,7 @@
                      "onCollisionText":"Welcome boy, to the land of the captive, I hear the shopkeeper might have a job.",
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -268,17 +296,20 @@
          "y":0
         }, 
         {
+         "draworder":"topdown",
          "height":16,
          "name":"player",
          "objects":[
                 {
                  "gid":133,
                  "height":0,
+                 "id":14,
                  "name":"player",
                  "properties":
                     {
                      "key":"human"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -293,17 +324,20 @@
          "y":0
         }, 
         {
+         "draworder":"topdown",
          "height":16,
          "name":"prison-logo",
          "objects":[
                 {
                  "gid":1199,
                  "height":0,
+                 "id":15,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -313,11 +347,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":16,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -327,11 +363,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":17,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -341,11 +379,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":18,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -355,11 +395,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":19,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -369,11 +411,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":20,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -383,11 +427,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":21,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -397,11 +443,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":22,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -411,11 +459,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":23,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -425,11 +475,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":24,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -439,11 +491,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":25,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -453,11 +507,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":26,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -467,11 +523,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":27,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -481,11 +539,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":28,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -495,11 +555,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":29,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -509,11 +571,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":30,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -523,11 +587,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":31,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -537,11 +603,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":32,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -551,11 +619,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":33,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -565,11 +635,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":34,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -579,11 +651,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":35,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -593,11 +667,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":36,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -607,11 +683,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":37,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -621,11 +699,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":38,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -635,11 +715,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":39,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -649,11 +731,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":40,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -663,11 +747,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":41,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -677,11 +763,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":42,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -691,11 +779,13 @@
                 {
                  "gid":1199,
                  "height":0,
+                 "id":43,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -705,11 +795,13 @@
                 {
                  "gid":860,
                  "height":0,
+                 "id":44,
                  "name":"",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -723,11 +815,13 @@
          "x":0,
          "y":0
         }],
+ "nextobjectid":45,
  "orientation":"orthogonal",
  "properties":
     {
      "assets":"assets\/assets.json"
     },
+ "renderorder":"right-down",
  "tileheight":32,
  "tilesets":[
         {

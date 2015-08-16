@@ -38,7 +38,10 @@ Preload.prototype = {
 	},
 	update: function() {
 		if (this.assetsReady) {
+			document.getElementById("about").style.display = "block";
+			document.getElementById("loading").style.display = "none";
 			this.game.state.start(this.stateName);
+			
 		}
 	},
 	mapLoadAssets: function() {

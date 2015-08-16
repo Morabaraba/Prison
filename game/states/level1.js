@@ -1,25 +1,31 @@
-/**
- * Welcome traveler or must I say tinkerer. You seek to travel lands full of
- * code, if you are willing to learn you will find it easy to navigate the
- * world from here.
- *
- * A basic understanding of javascript is needed I throw the [Javascript in
- * 30 Minutes Youtube Video] at you or send you of the [khan acadamy] for a
- * week and then you should be able to play in this sandbox.
- */
 'use strict';
 var _ = require('underscore');
 
 /**
- * @class Level1
+ * @class
+ *
+ * Welcome traveler or must I say tinkerer. You seek to travel lands full of
+ * code, if you are willing to learn you will find it easy to navigate the
+ * world from here.
+ *
+ * A basic understanding of javascript is needed I throw the [Javascript in 30 Minutes Youtube Video]
+ * at you or send you of the [khan acadamy] for a
+ * week and then you should be able to play in this sandbox.
  *
  * This is our play state Constructor
+ * 
+ * [Javascript in 30 Minutes Youtube Video]: https://www.youtube.com/watch?v=_cLvpJY2deo
+ * [khan acadamy]: https://www.khanacademy.org/computing/computer-programming/programming
  */
-function Level1() {}
+function Level1() {};
 Level1.prototype = {
+	/**
+	 * Init our level
+	 * 
+	 * @memberof Level1.prototype 
+	 */
 	init: function(config) {
 		config = config || {};
-		/** @class */
 		this.config = config;
 		this.map = 'map';
 		if (config.map) {
@@ -27,20 +33,20 @@ Level1.prototype = {
 		}
 	},
 	/**
-	 * @function preload
-	 *
 	 * The preload state function of the play state.
 	 * Load assets that was not in our map.properties.assets json file you will
 	 * need for you game.
+	 * 
+	 * @memberof Level1.prototype 
 	 */
 	preload: function() {
 		// all your preloads, asset kind of stuff.
 	},
 
 	/**
-	 * @function create
-	 *
 	 * The create state
+	 * 
+	 * @memberof Level1.prototype 
 	 */
 	create: function() {
 		// we enable arcade physics
@@ -70,12 +76,12 @@ Level1.prototype = {
 	},
 
 	/**
-	 * @function update
-	 *
 	 * The update state
 	 *
 	 * This is our play area grap the [phaser class docs] and start to manipulate the game
 	 * Also look at the [phaser examples] this file heavily correlates with their sample code area
+	 * 
+	 * @memberof Level1.prototype 
 	 */
 	update: function() {
 		// update stuff for the map, like checking if the player collides with a wall etc.

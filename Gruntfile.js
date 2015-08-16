@@ -7,6 +7,8 @@ _.str = require('underscore.string');
 // Mix in non-conflict functions to Underscore namespace if you want
 _.mixin(_.str.exports());
 
+var HOST = '0.0.0.0';
+var PORT = 8000;
 var LIVERELOAD_PORT = 35729;
 var lrSnippet = require('connect-livereload')({port: LIVERELOAD_PORT});
 var mountFolder = function (connect, dir) {
@@ -24,7 +26,10 @@ module.exports = function (grunt) {
             'game/**/*.js',
             'assets/maps/**',
             'assets/assets.json',
-            '!game/main.js'
+            '!game/main.js',
+            '*.md',
+            '*.html',
+            '*.js*',
         ],
         options: {
           spawn: false,
@@ -35,9 +40,10 @@ module.exports = function (grunt) {
     },
     connect: {
       options: {
-        port: 5083,
+        port: PORT ,
         // change this to '0.0.0.0' to access the server from outside
-        hostname: 'localhost'
+         hostname: HOST 
+        //hostname: 'localhost'
       },
       livereload: {
         options: {
@@ -52,7 +58,7 @@ module.exports = function (grunt) {
     },
     open: {
       server: {
-        path: 'http://localhost:5083'
+        path: 'http://' + HOST + ':' + PORT
       }
     },
     copy: {
@@ -72,11 +78,38 @@ module.exports = function (grunt) {
         src: ['game/main.js'],
         dest: 'dist/js/game.js'
       }
-    }
+    },
+    exec: {
+    build_docs: 'jsdoc -c conf.json --readme INDEX.md',
+    kanso_push: 'kanso push',
+    /*remove_logs: {
+      command: 'rm -f *.log',
+      stdout: false,
+      stderr: false
+    },
+    list_files: {
+      cmd: 'ls -l **'
+    },
+    list_all_files: 'ls -la',
+    echo_grunt_version: {
+      cmd: function() { return 'echo ' + this.version; }
+    },
+    echo_name: {
+      cmd: function(firstName, lastName) {
+        var formattedName = [
+          lastName.toUpperCase(),
+          firstName.toUpperCase()
+        ].join(', ');
+
+        return 'echo ' + formattedName;
+      }
+    }*/
+  }
   });
 
-  grunt.registerTask('build', ['buildBootstrapper', 'browserify','copy']);
-  grunt.registerTask('serve', ['build', 'connect:livereload','watch']);
+  grunt.registerTask('build', ['buildBootstrapper', 'browserify','copy', 'exec:build_docs']);
+  grunt.registerTask('publish', ['exec']);
+  grunt.registerTask('serve', ['build', 'connect:livereload', 'publish', 'watch',]);
   grunt.registerTask('default', ['serve']);
   grunt.registerTask('prod', ['build', 'copy']);
 

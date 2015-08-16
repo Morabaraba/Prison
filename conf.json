@@ -1,0 +1,25 @@
+{
+	"tags": {
+		"allowUnknownTags": true,
+		"dictionaries": ["jsdoc", "closure"]
+	},
+	"source": {
+		"include": ["game"],
+		"includePattern": ".+\\.js(doc)?$",
+		"excludePattern": "(^|\\/|\\\\)_"
+	},
+	"plugins": ["plugins/markdown", "plugins/summarize"],
+	"markdown": {
+		"tags": ["foo", "bar"]
+	},
+	"opts": {
+		"template": "jsdoc3-sour-template",
+		"encoding": "utf8",
+		"destination": "./dist/docs",
+		"recurse": true
+	},
+	"templates": {
+		"cleverLinks": false,
+		"monospaceLinks": false
+	}
+}

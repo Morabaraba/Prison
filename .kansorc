@@ -1,9 +1,0 @@
-exports.env = {
-    // the default env will be used when you just do "kanso push"
-    'local': {
-        db: 'http://localhost:5984/prison'
-    },
-    'default': {
-        db: 'http://localhost:5984/prison'
-    }
-};

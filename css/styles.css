@@ -1,10 +1,33 @@
 body {
-  background-color: #333;
+	margin: 0;
+	padding: 0;
+	background-color: #333;
+	font-family: Arial, Helvetica, sans-serif;
 }
-
+#backdrop {
+	width: 100%;
+	z-index: -99;
+	position: absolute;
+}
+#container {
+	padding-top: 64px
+}
 #prison {
-  width: 512px;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
+	width: 512px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+}
+#about {
+	padding-top: 12px;
+}
+#loading
+ {
+	color: white;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+#about a {
+	color: white;
+	
 }

@@ -12,3 +12,7 @@ dist
 Session.vim
 .netrwhist
 *~
+jsdoc3-sour-template
+.kansorc
+.project
+assets/images/tmp/

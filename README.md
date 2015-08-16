@@ -1,12 +1,16 @@
-# Prison
+## Prison
 
-## Introduction
-
-> A [player] in a prison, created by pattern-makers.
+> A long road to become a pattern-maker.
 
 A simple game allowing you to create your own [tiled] maps and load it with [phaser.io] as a game.
 
-Please note some of this instructions does not include packages you will need right now. So if you follow the instructions make sure you understand what you are installing.
+- WebApp: [http://bit.ly/prisonApp](http://bit.ly/prisonApp)
+
+- Github: [https://github.com/Morabaraba/Prison](https://github.com/Morabaraba/Prison)
+- Docs: [http://bit.ly/prisonApp-docs](http://bit.ly/prisonApp-docs)
+
+[tiled]: http://www.mapeditor.org/
+[phaser.io]: http://phaser.io/
 
 ### Ubuntu
 
@@ -14,18 +18,22 @@ If you have nothing installed on your machine and just want to get this project 
 
 Execute the following commands from your ubuntu terminal:
 
-	sudo apt-get install tmux vim git npm couchdb chromium tiled
-	sudo npm install bower kanso grunt-cli -g 
+```sh
+	sudo apt-get install npm tiled
+	sudo npm install bower grunt-cli -g 
 	
 	mkdir ~/project
 	cd ~/project/
-	URL=prison@ludo.wifi:~/project/prison
+	URL=https://github.com/ludoza/Prison.git
 	git clone $URL
 	cd prison
-
+```
+	
 ### OS X
 
 [Brew], I believe all the tools installs easily enough from a OS X side that I don't have to waste bytes.
+
+[Brew]: http://brew.sh/
 
 ## Setup
 
@@ -33,11 +41,12 @@ If everything went well you have the power of a thousand JavaScript ninja warrio
 
 Now let us setup our local packages and tools for our project. Starting with the node package manager(npm).
 
+```sh
 	npm install
 	bower install
-	kanso install
+```
 
-`npm install` install all the packages as specified in `vim package.json`. You will see I sneaked in a [bower] and [kanso] install. I'm using kanso to publish to couchdb. I will be using [pouchdb] very soon'ish for cloud integration.
+`npm install` install all the packages as specified in `vim package.json`. 
 
 You can change the resolution of your game in `vim config.json`. 
 
@@ -45,13 +54,13 @@ You can change the resolution of your game in `vim config.json`.
 
 If everything went well you can:
 
-  grunt
-
-and then from os x `open http://localhost:5083` or use [chrome] `chromium-browser http://localhost:5083` on ubuntu, btw chrome is our default web browser at the moment, 
+```sh
+	grunt
+```
 
 You will then see our first prison in your browser. Move around with the up, down, left, right.
 
-Now you can go play in `vim game/states/play.js` and after each :w in vim, your web browser should refresh with your updated javascript to the play [state] of the game. This also counts for any assets you have in the `cd assets` directory. We use [tiled] to create our assets/maps/prison.json file. I started with my own 2d(twod) set of tools wrapping [phaser] objects to create a game, and you will see I'm building my own property system on tiled, linking:
+Now you can go play in `vim game/states/play.js` and after each :w in vim, your web browser should refresh with your updated javascript to the play [state] of the game. This also counts for any assets you have in the `cd assets` directory. We use [tiled] to create our `assets/maps/prison.json` file. I started with my own 2d(twod) set of tools wrapping [phaser.io] objects to create a game, and you will see I'm building my own property system on tiled, linking:
 
 	digraph tiled_twod_phaser_diagram {
 		"tiled"->"twod"
@@ -64,13 +73,16 @@ I will document this as I go along but I'm mostly working in game/prefabs and ar
 
 but I'm leaving `vim assets/prison.json` and `vim game/states/play.js` for each player to decide if they want to follow my game, or create their own. If you do create your own game, please share it with me, or you can help by giving me feedback and correcting me when I bastardize your favourite tool.
 
+[states]: http://phaser.io/docs/Phaser.State.html
+[state]: http://phaser.io/docs/Phaser.State.html
+
 ## The Grunt
 
-> The warthog part is true, I was on holiday while I played with phaser.
+Grunt creates `dist/` and he feeds our browser. You can change the settings that will be passed for the bootstrapper in `vim config.json` you can change the template that generates the main.js in:
 
-You will not believe but I was approached by a warthog just minutes ago, a single tooth warthog. We will call him `grunt`. He is the runner of the show, he create dist/ and he feeds our browser. You can change the settings that will be passed for the bootstrapper in `vim config.json` you can change the template that generates the main.js in:
-
-> var bootstrapper = grunt.file.read('templates/_main.js.tpl');
+```javascript
+	var bootstrapper = grunt.file.read('templates/_main.js.tpl');
+```
 
 ## License 
 

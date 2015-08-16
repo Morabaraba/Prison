@@ -1,4 +1,9 @@
+'use strict';
+var _ = require('underscore');
+
 /**
+ * @class  
+ * 
  * Welcome traveler or must I say tinkerer. You seek to travel lands full of
  * code, if you are willing to learn you will find it easy to navigate the
  * world from here.
@@ -6,14 +11,6 @@
  * A basic understanding of javascript is needed I throw the [Javascript in
  * 30 Minutes Youtube Video] at you or send you of the [khan acadamy] for a
  * week and then you should be able to play in this sandbox.
- */
-'use strict';
-var _ = require('underscore');
-
-/**
- * @class Play
- *
- * This is our play state Constructor
  */
 function Play() {}
 Play.prototype = {
@@ -30,6 +27,7 @@ Play.prototype = {
 	 * The preload state function of the play state.
 	 * Load assets that was not in our map.properties.assets json file you will
 	 * need for you game.
+	 * @memberof Play
 	 */
 	preload: function() {
 		// all your preloads, asset kind of stuff.
@@ -39,6 +37,7 @@ Play.prototype = {
 	 * @function create
 	 *
 	 * The create state
+	 * @memberof Play
 	 */
 	create: function() {
 		// we enable arcade physics
@@ -70,6 +69,7 @@ Play.prototype = {
 	 *
 	 * This is our play area grap the [phaser class docs] and start to manipulate the game
 	 * Also look at the [phaser examples] this file heavily correlates with their sample code area
+	 * @memberof Play
 	 */
 	update: function() {
 		// update stuff for the map, like checking if the player collides with a wall etc.

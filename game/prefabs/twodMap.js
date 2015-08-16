@@ -1,11 +1,18 @@
 'use strict';
 var _ = require('underscore');
 
+/**
+ * Our map constructor with the player, sprites, collisionLayers, tiletsets, etc.
+ * 
+ * @class
+ */
 var TwodMap = function(game, key) {
 	Phaser.Tilemap.call(this, game, key);
 
 	this.key = key;
-	/** @property player - when `createObjects()` gets called it will also populate this property. */
+	/**
+	 * @property player - when `createObjects()` gets called it will also populate this property.
+	 */
 	this.player;
 	/** @property sprites - when `createObjects()` gets called it will also populate this property. */
 	this.sprites;
