@@ -10,9 +10,9 @@ function Preload() {
 Preload.prototype = {
 	preload: function() {
 		// Ok let us get a gif up on the screen showing we are loading stuff
-		this.asset = this.add.sprite(this.game.width / 2, this.game.height / 2, 'preloader');
-		this.asset.anchor.setTo(0.5, 0.5);
-		this.load.setPreloadSprite(this.asset);
+		//this.asset = this.add.sprite(this.game.width / 2, this.game.height / 2, 'preloader');
+		//this.asset.anchor.setTo(0.5, 0.5);
+		//this.load.setPreloadSprite(this.asset);
 
 		// ok this is where we start to build the prison, you can specify which tiled map json file to use
 		// in the hash of the url, or it downloads 'assets/maps/prison.json'.
@@ -34,12 +34,13 @@ Preload.prototype = {
 		}, this);
 	},
 	create: function() {
-		this.asset.cropEnabled = false;
+		//this.asset.cropEnabled = false;
 	},
 	update: function() {
 		if (this.assetsReady) {
 			document.getElementById("about").style.display = "block";
 			document.getElementById("loading").style.display = "none";
+			document.getElementById("clock").style.display = "none";
 			this.game.state.start(this.stateName);
 			
 		}

@@ -53,17 +53,20 @@
          "y":0
         }, 
         {
+         "draworder":"topdown",
          "height":16,
          "name":"player",
          "objects":[
                 {
                  "gid":260,
                  "height":0,
+                 "id":1,
                  "name":"player",
                  "properties":
                     {
-                     "key":"human"
+
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -78,12 +81,14 @@
          "y":0
         }, 
         {
+         "draworder":"topdown",
          "height":16,
          "name":"ai",
          "objects":[
                 {
                  "gid":602,
                  "height":0,
+                 "id":2,
                  "name":"dorrado",
                  "properties":
                     {
@@ -91,6 +96,7 @@
                      "onCollisionText":"Quick go into the store room.",
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -100,11 +106,13 @@
                 {
                  "gid":592,
                  "height":0,
+                 "id":3,
                  "name":"guard-1",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -114,12 +122,14 @@
                 {
                  "gid":592,
                  "height":0,
+                 "id":4,
                  "name":"guard-2",
                  "properties":
                     {
                      "onCollisionText":"Ouch!",
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -129,11 +139,13 @@
                 {
                  "gid":592,
                  "height":0,
+                 "id":5,
                  "name":"guard-3",
                  "properties":
                     {
 
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -148,17 +160,20 @@
          "y":0
         }, 
         {
+         "draworder":"topdown",
          "height":16,
          "name":"chests",
          "objects":[
                 {
                  "gid":2925,
                  "height":0,
+                 "id":6,
                  "name":"chest",
                  "properties":
                     {
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -168,11 +183,13 @@
                 {
                  "gid":2925,
                  "height":0,
+                 "id":7,
                  "name":"chest",
                  "properties":
                     {
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -182,11 +199,13 @@
                 {
                  "gid":2925,
                  "height":0,
+                 "id":8,
                  "name":"chest",
                  "properties":
                     {
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -196,11 +215,13 @@
                 {
                  "gid":2925,
                  "height":0,
+                 "id":9,
                  "name":"chest",
                  "properties":
                     {
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -210,11 +231,13 @@
                 {
                  "gid":2925,
                  "height":0,
+                 "id":10,
                  "name":"chest",
                  "properties":
                     {
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -224,11 +247,13 @@
                 {
                  "gid":2925,
                  "height":0,
+                 "id":11,
                  "name":"chest",
                  "properties":
                     {
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -269,12 +294,14 @@
          "y":0
         }, 
         {
+         "draworder":"topdown",
          "height":16,
          "name":"gotos",
          "objects":[
                 {
                  "gid":728,
                  "height":0,
+                 "id":12,
                  "name":"door",
                  "properties":
                     {
@@ -282,6 +309,7 @@
                      "onCollisionGotoGame":"#assets\/maps\/prison-level1.json",
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -291,6 +319,7 @@
                 {
                  "gid":990,
                  "height":0,
+                 "id":13,
                  "name":"portal",
                  "properties":
                     {
@@ -298,6 +327,7 @@
                      "onCollisionGotoGame":"#assets\/maps\/prison.json",
                      "physics":"true"
                     },
+                 "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
@@ -311,11 +341,13 @@
          "x":0,
          "y":0
         }],
+ "nextobjectid":14,
  "orientation":"orthogonal",
  "properties":
     {
      "assets":"assets\/assets.json"
     },
+ "renderorder":"right-down",
  "tileheight":32,
  "tilesets":[
         {

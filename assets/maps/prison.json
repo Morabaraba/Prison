@@ -152,7 +152,8 @@
                  "name":"portal",
                  "properties":
                     {
-                     "onCollisionGotoGame":"#\/assets\/maps\/prison-level1.json",
+                     "imovable":"true",
+                     "onCollisionGotoGame":"#assets\/maps\/prison-level1.json",
                      "physics":"true"
                     },
                  "rotation":0,
@@ -206,7 +207,7 @@
                  "properties":
                     {
                      "immovable":"true",
-                     "onCollisionGotoGame":"#\/assets\/maps\/prison-house.json",
+                     "onCollisionGotoGame":"#assets\/maps\/prison-house.json",
                      "physics":"true"
                     },
                  "rotation":0,
@@ -278,7 +279,7 @@
                  "properties":
                     {
                      "immovable":"true",
-                     "onCollisionText":"Welcome boy, to the land of the captive, I hear the shopkeeper might have a job.",
+                     "onCollisionText":"Welcome boy, to the land of the captive, I know the shopkeeper also needs extra hands.",
                      "physics":"true"
                     },
                  "rotation":0,
@@ -307,7 +308,7 @@
                  "name":"player",
                  "properties":
                     {
-                     "key":"human"
+
                     },
                  "rotation":0,
                  "type":"",
@@ -814,8 +815,67 @@
          "width":16,
          "x":0,
          "y":0
+        }, 
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 750, 751, 752, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "height":16,
+         "name":"doors",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":16,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "height":16,
+         "name":"people",
+         "objects":[
+                {
+                 "gid":154,
+                 "height":0,
+                 "id":46,
+                 "name":"",
+                 "properties":
+                    {
+                     "immovable":"true",
+                     "onCollisionText":"Leave me alone",
+                     "physics":"true"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":240,
+                 "y":453
+                }, 
+                {
+                 "gid":164,
+                 "height":0,
+                 "id":47,
+                 "name":"",
+                 "properties":
+                    {
+                     "immovable":"true",
+                     "onCollisionText":"You may not enter",
+                     "physics":"true"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":319,
+                 "y":243
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "width":16,
+         "x":0,
+         "y":0
         }],
- "nextobjectid":45,
+ "nextobjectid":49,
  "orientation":"orthogonal",
  "properties":
     {

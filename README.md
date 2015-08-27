@@ -24,7 +24,7 @@ Execute the following commands from your ubuntu terminal:
 	
 	mkdir ~/project
 	cd ~/project/
-	URL=https://github.com/ludoza/Prison.git
+	URL=https://github.com/Morabaraba/Prison.git
 	git clone $URL
 	cd prison
 ```

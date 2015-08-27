@@ -7,8 +7,8 @@ _.str = require('underscore.string');
 // Mix in non-conflict functions to Underscore namespace if you want
 _.mixin(_.str.exports());
 
-var HOST = '0.0.0.0';
-var PORT = 8000;
+var HOST = '127.0.0.1';
+var PORT = 8080;
 var LIVERELOAD_PORT = 35729;
 var lrSnippet = require('connect-livereload')({port: LIVERELOAD_PORT});
 var mountFolder = function (connect, dir) {
@@ -107,9 +107,9 @@ module.exports = function (grunt) {
   }
   });
 
-  grunt.registerTask('build', ['buildBootstrapper', 'browserify','copy', 'exec:build_docs']);
+  grunt.registerTask('build', ['buildBootstrapper', 'browserify', 'copy', 'exec:build_docs']);
   grunt.registerTask('publish', ['exec']);
-  grunt.registerTask('serve', ['build', 'connect:livereload', 'publish', 'watch',]);
+  grunt.registerTask('serve', ['build', 'connect:livereload', 'watch']);
   grunt.registerTask('default', ['serve']);
   grunt.registerTask('prod', ['build', 'copy']);
 

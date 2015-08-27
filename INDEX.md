@@ -24,6 +24,7 @@ A free, fast and flexible framework for HTML5 game creation.
 You might now have realized this is still wip, so any input would be appreciated.
  
 #### Game Source Code
+
 - Github: [https://github.com/Morabaraba/Prison](https://github.com/Morabaraba/Prison)
 - Docs: [http://bit.ly/prisonApp-docs](http://bit.ly/prisonApp-docs)
 
@@ -41,10 +42,7 @@ Execute the following commands from your ubuntu terminal:
 	sudo apt-get install npm tiled
 	sudo npm install bower grunt-cli -g 
 	
-	mkdir ~/project
-	cd ~/project/
-	URL=https://github.com/ludoza/Prison.git
-	git clone $URL
+	git clone https://github.com/Morabaraba/Prison.git
 	cd prison
 ```
 	
@@ -78,6 +76,10 @@ If everything went well you can:
 ```
 
 You will then see our first prison in your browser. Move around with the up, down, left, right.
+
+## Credits
+
+See the CREDITS.md file.
 
 ## License 
 

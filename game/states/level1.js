@@ -12,7 +12,10 @@ var _ = require('underscore');
  * at you or send you of the [khan acadamy] for a
  * week and then you should be able to play in this sandbox.
  *
- * This is our play state Constructor
+ * # Level 1
+ * 
+ * Phaser games consist out of states, a state contain sub function, which gets called depending
+ * where the state is currently.
  * 
  * [Javascript in 30 Minutes Youtube Video]: https://www.youtube.com/watch?v=_cLvpJY2deo
  * [khan acadamy]: https://www.khanacademy.org/computing/computer-programming/programming
@@ -20,7 +23,7 @@ var _ = require('underscore');
 function Level1() {};
 Level1.prototype = {
 	/**
-	 * Init our level
+	 * Init our level. load our map
 	 * 
 	 * @memberof Level1.prototype 
 	 */
@@ -33,9 +36,7 @@ Level1.prototype = {
 		}
 	},
 	/**
-	 * The preload state function of the play state.
-	 * Load assets that was not in our map.properties.assets json file you will
-	 * need for you game.
+	 * The preload state function, at the moment this is not used, so see this as a stub
 	 * 
 	 * @memberof Level1.prototype 
 	 */
@@ -44,7 +45,8 @@ Level1.prototype = {
 	},
 
 	/**
-	 * The create state
+	 * Create the level, what should the physics be like, what map should be load, etc.
+	 * Should be done here
 	 * 
 	 * @memberof Level1.prototype 
 	 */
@@ -72,6 +74,7 @@ Level1.prototype = {
 		
 		this.introText = this.map.createText(48, 48, 'Quick let me turn you into a rat, hide the goods, and scram through the gutter', { font: '16px Arial', fill: '#ffffff', align: 'center'});
 		this.introText.wordWrap = true;
+		// gid-255 rat
 		this.map.player.loadTexture('orange_rat');
 	},
 

@@ -59,10 +59,23 @@ TwodMap.prototype.createObjects = function() {
 	var mapData = this.game.cache.getTilemapData(this.key).data;
 	_.each(this.objects, function(layer, name) {
 		_.each(layer, function(object) {
+			// So tiled objects can use a key as in a key name you loaded with phaser.load into the cache
+			var key;
+			if (object.properties.key) {
+				key = object.properties.key;
+			} else {
+				key = 'gid-' + object.gid;
+				// here we forge bitmaps from the `tileset[0]` using the gid assigned by [Tiled]
+				var bitmap = this.game.add.bitmapData(32, 32, key, true);
+				// and how do we know there will only be one tileset
+				this.tilesets[0].draw(bitmap.context, 0, 0, object.gid);
+				//var bitmap = this.game.add.BitmapData(32, 32, 'gid-' + object.gid, true);
+				key = bitmap;
+			}
 			// TODO ugly code why can we not load prefab's dynamically with browserfy(I tried btw)
 			if (name === 'player') {
 				var TwodCursor = require('./twodCursor');
-				this.player = new TwodCursor(this.game, object.x, object.y - 32, object.properties.key);
+				this.player = new TwodCursor(this.game, object.x, object.y - 32, key);
 				this.player.cursors = this.game.input.keyboard.createCursorKeys();
 				this.game.world.add(this.player);
 				this.game.physics.enable(this.player, Phaser.Physics.ARCADE);
@@ -78,19 +91,7 @@ TwodMap.prototype.createObjects = function() {
 			// Objects will always copy the properties from their Object layers
 			_.extend(object.properties, layerData.properties);
 
-			// So tiled objects can use a key as in a key name you loaded with phaser.load into the cache
-			var key;
-			if (object.properties.key) {
-				key = object.properties.key;
-			} else {
-				key = 'gid-' + object.gid;
-				// here we forge bitmaps from the `tileset[0]` using the gid assigned by [Tiled]
-				var bitmap = this.game.add.bitmapData(32, 32, key, true);
-				// and how do we know there will only be one tileset
-				this.tilesets[0].draw(bitmap.context, 0, 0, object.gid);
-				//var bitmap = this.game.add.BitmapData(32, 32, 'gid-' + object.gid, true);
-				key = bitmap;
-			}
+			
 			var sprite = this.game.add.sprite(object.x, object.y - 32 /* subtract tile height, don't know why */ , key);
 			result.push(sprite);
 			sprite.properties = object.properties;

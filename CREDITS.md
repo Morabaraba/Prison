@@ -4,4 +4,6 @@
 
 # Town background
 
-- http://www.creativeuncut.com/gallery-16/art/bs-town-design2.jpg
+- http://fav.me/d56jq8h
+
+Artist, were asked for permission, and agreed.
