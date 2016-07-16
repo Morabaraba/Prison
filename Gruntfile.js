@@ -43,7 +43,6 @@ module.exports = function (grunt) {
         port: PORT ,
         // change this to '0.0.0.0' to access the server from outside
          hostname: HOST 
-        //hostname: 'localhost'
       },
       livereload: {
         options: {
@@ -68,6 +67,7 @@ module.exports = function (grunt) {
           { expand: true, src: ['assets/**'], dest: 'dist/' },
           { expand: true, flatten: true, src: ['game/plugins/*.js'], dest: 'dist/js/plugins/' },
           { expand: true, flatten: true, src: ['bower_components/**/build/*.js'], dest: 'dist/js/' },
+          { expand: true, flatten: true, src: ['bower_components/pouchdb/dist/pouchdb.js'], dest: 'dist/js/' },
           { expand: true, src: ['css/**'], dest: 'dist/' },
           { expand: true, src: ['index.html'], dest: 'dist/' }
         ]
