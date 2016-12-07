@@ -42,7 +42,7 @@ Play.prototype = {
 	create: function() {
 		// we enable arcade physics
 		this.game.physics.startSystem(Phaser.Physics.ARCADE);
-
+	    this.game.physics.arcade.gravity.y = 250;
 		/**
 		 * @prop this.map TwodMap the map prefab instance attached to the Play state
 		 *

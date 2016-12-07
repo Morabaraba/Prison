@@ -26,13 +26,9 @@ TwodMap.prototype = Object.create(Phaser.Tilemap.prototype);
 TwodMap.prototype.constructor = TwodMap;
 
 TwodMap.prototype.gotoGame = function(url, message) {
-	if (!message) {
-		window.location = url;
-		window.location.reload(true);
-		return;
-	};
-	this.game.state.start('gotoGame', true, false, url, message);
-
+	this.game.state.pause();
+	window.location = url;
+	this.game.state.start('preload');
 };
 
 TwodMap.prototype.collide = function(obj1, obj2) {

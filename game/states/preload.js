@@ -32,6 +32,7 @@ Preload.prototype = {
             console.log("mapLoader filed on receiving a file");
 			console.log(arguments);
 		}, this);
+		
 	},
 	create: function() {
 		//this.asset.cropEnabled = false;
