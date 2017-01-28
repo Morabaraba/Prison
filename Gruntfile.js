@@ -7,7 +7,7 @@ _.str = require('underscore.string');
 // Mix in non-conflict functions to Underscore namespace if you want
 _.mixin(_.str.exports());
 
-var HOST = '127.0.0.1';
+var HOST = '0.0.0.0';
 var PORT = 8080;
 var LIVERELOAD_PORT = 35729;
 var lrSnippet = require('connect-livereload')({port: LIVERELOAD_PORT});

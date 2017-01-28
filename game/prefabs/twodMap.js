@@ -28,7 +28,9 @@ TwodMap.prototype.constructor = TwodMap;
 TwodMap.prototype.gotoGame = function(url, message) {
 	if (!message) {
 		window.location = url;
-		window.location.reload(true);
+		//window.location.reload(true);
+		//this.game.state.start(url)
+		this.game.state.start('preload');
 		return;
 	};
 	this.game.state.start('gotoGame', true, false, url, message);
